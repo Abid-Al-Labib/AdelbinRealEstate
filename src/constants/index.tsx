@@ -6,11 +6,31 @@ import facebook from "../assets/icons/facebook.svg"
 import instagram from "../assets/icons/instagram.svg"
 
 export const navLinks = [
-    { href: "#home", label: "Home" },
-    { href: "#sales", label: "Sales" },
-    { href: "#construction", label: "Construction" },
-    { href: "#loan", label: "Loan" },
-    { href: "#contact-me", label: "Contact" }
+    { 
+        href: "#home",
+        label: "Home",
+        to: "/"
+    },
+    { 
+        href: "#sales",
+        label: "Real Estate",
+        to: "/RealEstates"
+    },
+    { 
+        href: "#construction",
+        label: "Construction",
+        to: "/Construction"
+     },
+    { 
+        href: "#Mortgage",
+        label: "Mortgage",
+        to: "/Mortgage"
+    },
+    { 
+        href: "#contact-me", 
+        label: "Contact",
+        to: "/ContactMe"
+    }
 ];
 
 export const statistics = [
@@ -23,18 +43,21 @@ export const statistics = [
 export const services = [
     {
         iconURL: house,
+        url: "/RealEstates",
         label: "Real Estate Sales",
-        subtext: "Get the best deals with the best prices"
+        subtext: " is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries"
     },
     {
         iconURL: tools,
+        url: "/Construction",
         label: "Construction",
-        subtext: "Build your dreams into reality"
+        subtext: " is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,"
     },
     {
         iconURL: banknotes,
-        label: "Lending",
-        subtext: "something to something to something"
+        url: "/Mortgage",
+        label: "Mortgage",
+        subtext: " is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,"
     }
 ]
 
@@ -42,9 +65,9 @@ export const footerLinks = [
     {
         title: "Services",
         links: [
-            { name: "Real Estate Sales", link: "/" },
-            { name: "Construction", link: "/" },
-            { name: "Lending", link: "/" },
+            { name: "Real Estate", link: "/RealEstates" },
+            { name: "Construction", link: "/Construction" },
+            { name: "Mortgage", link: "/Mortgage" },
         ],
     },
     {

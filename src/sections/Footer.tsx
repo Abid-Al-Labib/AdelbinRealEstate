@@ -1,6 +1,7 @@
 import copyrightSign from "../assets/icons/copyright-sign.svg";
 // import footerLogo from "../assets/images/footer-logo.svg";
 import { footerLinks, socialMedia } from "../constants";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -66,7 +67,9 @@ const Footer = () => {
           />
           <p>Copyright. All rights reserved.</p>
         </div>
-        <p className='font-montserrat cursor-pointer'>Terms & Conditions</p>
+        <Link to={"/Terms&Conditions"}>
+        <p className='font-montserrat cursor-pointer hover:underline'>Terms & Conditions</p>
+        </Link>
       </div>
     </footer>
   );

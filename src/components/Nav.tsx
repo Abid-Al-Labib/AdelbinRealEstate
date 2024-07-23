@@ -41,6 +41,7 @@ import { useState } from 'react';
 import hamburger from '../assets/icons/hamburger.svg';
 import closeIcon from '../assets/icons/xcircle.svg'; // Import a close icon
 import { navLinks } from '../constants';
+import { Link } from 'react-router-dom';
 
 const Nav = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -58,12 +59,9 @@ const Nav = () => {
         <ul className="flex-1 flex justify-center items-center gap-16 max-lg:hidden">
           {navLinks.map((item) => (
             <li key={item.label}>
-              <a
-                href={item.href}
-                className="font-montserrat leading-normal text-lg font-bold hover:text-slate-600 hover:underline text-black"
-              >
+            <Link to={item.to} className="font-montserrat text-lg font-bold text-slate-gray hover:underline hover:text-black">
                 {item.label}
-              </a>
+            </Link>
             </li>
           ))}
         </ul>
@@ -97,14 +95,14 @@ const Nav = () => {
         
           {navLinks.map((item) => (
             <div className='flex justify-center rounded-full border-2 bg-gray-300 border-white'>
-            <a
+            <Link
               key={item.label}
-              href={item.href}
-              className="font-montserrat leading-normal font-bold text-lg text-black m-4"
+              to={item.to}
+              className="font-montserrat leading-normal font-bold text-lg text-black hover:underline m-4"
               onClick={() => setMenuOpen(false)}
             >
               {item.label}
-            </a>
+            </Link>
             </div>
 
           ))}
