@@ -8,11 +8,11 @@ const Reviews = () => {
     className="flex justify-between items-center max-lg:flex-col gap-10 w-full max-container ">
       <div className="flex flex-1 flex-col max-lg:text-center max-xl:padding-x">
         <h2 className="font-palanquin text-4xl capitalize font-bold lg:max-w-lg">
-          What my <span className="text-crimson">clients</span> say
+          What our <span className="text-crimson">clients</span> say
           <br />
         </h2>
         <p className="mt-4 lg:max-w-lg info-text">
-          Hear stories from my customers about their exceptional experience with my services.
+          Hear stories from clients about their exceptional experience with my services.
         </p>
       </div>
       <div className="flex-1 flex just items-center px-6">

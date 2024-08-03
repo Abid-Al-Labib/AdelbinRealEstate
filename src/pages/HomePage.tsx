@@ -1,8 +1,8 @@
-import Hero from "../sections/Hero"
 import Nav from "../components/Nav"
 import Services from "../sections/Services"
 import Footer from "../sections/Footer"
 import Reviews from "../sections/Reviews"
+import HomeAbout from "../sections/HomeAbout"
 function HomePage() {
   return (
     <main className="relative">
@@ -11,7 +11,7 @@ function HomePage() {
         <Services/>
       </section>
       <section className="xl:padding-l wide:padding-r padding-b">
-        <Hero/>
+        <HomeAbout/>
       </section>
       <section className="xl:padding-l wide:padding-r padding-b">
         <Reviews/>

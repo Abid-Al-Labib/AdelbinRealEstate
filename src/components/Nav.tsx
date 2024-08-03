@@ -1,43 +1,5 @@
-// // import headerlogo from '../assets/images/header-logo.svg'
-// import hamburger from '../assets/icons/hamburger.svg'
-// import { navLinks } from '../constants'
-// const Nav = () => {
-//   return (
-//     <header className='z-20 padding-x py-8 absolute w-full'>
-//         <nav className='flex justify-between items-center max-container'>
-//             {/* <a href="./">
-//                 <img 
-//                 src={headerlogo} 
-//                 alt="logo"
-//                 width={130}
-//                 height={29}
-//                 />
-//             </a> */}
-//             <ul className='flex-1 flex justify-center items-center gap-16 max-lg:hidden'>
-//                 {navLinks.map((item) => (
-//                 <li key={item.label}>
-//                     <a href={item.href } className='font-montserrat leading-normal text-lg text-slate-gray'>
-//                         {item.label}
-//                     </a>
-//                 </li>
-//                 ))}
-//             </ul>
-//             <div className='hidden max-lg:block'>
-//                 <img src={hamburger} 
-//                 alt="hamburger" 
-//                 width={25} 
-//                 height={25} />
-//             </div>
-//         </nav>
-//     </header>
-//   )
-// }
-
-// export default Nav
-
-
 import { useState } from 'react';
-// import headerlogo from '../assets/images/header-logo.svg';
+import headerlogo from '../assets/icons/logo.svg';
 import hamburger from '../assets/icons/hamburger.svg';
 import closeIcon from '../assets/icons/xcircle.svg'; // Import a close icon
 import { navLinks } from '../constants';
@@ -51,15 +13,20 @@ const Nav = () => {
   };
 
   return (
-    <header className="sticky top-0 bg-white z-20 padding-x py-8 w-full shadow-sm">
+    <header className="sticky top-0 bg-white z-20 padding-x pt-3 pb-1 w-full shadow-sm">
       <nav className="flex justify-between items-center max-container">
-        {/* <a href="./">
-          <img src={headerlogo} alt="logo" width={130} height={29} />
-        </a> */}
+        <a href="./">
+          <div className="flex flex-col items-center">
+            <img src={headerlogo} alt="logo" width={120} height={100}/>
+            {/* <h3 className="whitespace-nowrap font-cursive italic ">
+               A Tradition of Trust
+            </h3> */}
+          </div>
+        </a>
         <ul className="flex-1 flex justify-center items-center gap-16 max-lg:hidden">
           {navLinks.map((item) => (
             <li key={item.label}>
-            <Link to={item.to} className="font-montserrat text-lg font-bold text-slate-gray hover:underline hover:text-black">
+            <Link to={item.to} className="font-montserrat text-2xl font-bold text-black hover:underline hover:text-slate-gray">
                 {item.label}
             </Link>
             </li>

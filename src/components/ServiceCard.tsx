@@ -1,26 +1,54 @@
-import { FC } from "react"
+// import { FC } from "react"
 
+
+// interface ServiceCardProps {
+//     iconURL: string,
+//     label: string,
+//     subtext: string,
+
+// }
+
+// const ServiceCard: FC<ServiceCardProps>  = ({iconURL,label,subtext}) => {
+//   return (
+
+//     <div className="flex-1 sm:w-[350px] w-full sm:min-w-[350px] border-2 rounded-[20px] shadow-3xl px-10 py-10 hover:border-crimson hover:shadow-gray-600">
+//         <div className="w-14 h-14 flex justify-center items-center bg-crimson rounded-full">
+//         <img src={iconURL} alt="label" width={36} height={36}/>
+//         </div>
+//         <h3 className="text-3xl font-bold font-palanquin mt-4">{label}</h3>
+//         <p className="mt-3 break-words font-montserrat text-lg leading-normal text-slate-gray">{subtext}</p>
+//         <br />
+//         <p>click to learn more!</p>
+//     </div>
+//   )
+// }
+
+
+// export default ServiceCard
+
+
+import { FC } from "react";
 
 interface ServiceCardProps {
-    iconURL: string,
-    label: string,
-    subtext: string,
-
+  iconURL: string;
+  label: string;
+  subtext: string;
 }
 
-const ServiceCard: FC<ServiceCardProps>  = ({iconURL,label,subtext}) => {
+const ServiceCard: FC<ServiceCardProps> = ({ iconURL, label, subtext }) => {
   return (
-
-    <div className="flex-1 sm:w-[350px] w-full sm:min-w-[350px] border-2 rounded-[20px] shadow-3xl px-10 py-10 hover:border-crimson hover:shadow-gray-600">
-        <div className="w-14 h-14 flex justify-center items-center bg-crimson rounded-full">
-        <img src={iconURL} alt="label" width={36} height={36}/>
-        </div>
-        <h3 className="text-3xl font-bold font-palanquin mt-4">{label}</h3>
-        <p className="mt-3 break-words font-montserrat text-lg leading-normal text-slate-gray">{subtext}</p>
-        <br />
-        <p>click to learn more!</p>
+    <div className="flex flex-col flex-1 border-2 rounded-[20px] shadow-3xl px-10 py-10 hover:border-crimson hover:shadow-gray-600">
+      <div className="w-10 h-10 flex justify-center items-center bg-crimson rounded-full">
+        <img src={iconURL} alt={label} width={28} height={28} />
+      </div>
+      <h3 className="text-xl font-bold font-palanquin mt-2">{label}</h3>
+      {/* <p className="mt-2 break-words font-montserrat text-md leading-normal text-slate-gray">{subtext}</p> */}
+      <p className="mt-2 break-words font-montserrat text-md leading-normal text-crimson">click to learn more!</p>
     </div>
-  )
-}
+  );
+};
 
-export default ServiceCard
+export default ServiceCard;
+
+
+
