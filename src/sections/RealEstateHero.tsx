@@ -11,14 +11,14 @@ const RealEstateHero = () => {
             <h1 className="text-orange-300 pl-10 mt-10 font-palanquin text-[95px] max-sm:text-[70px] max-sm:leading-[78px] font-bold">
                 <span>Real Estate</span>        
             </h1>
-            <p className="whitespace-nowrap font-montserrat pl-10 text-white text-2xl font-bold leading-8 mt-6 sm:max-w-sm">
+            <p className="whitespace-nowrap font-montserrat pl-10 text-white text-xl sm:text-2xl font-bold leading-8 mt-6 sm:max-w-sm">
                     Residential And Commercial Sales
             </p>
-            <p className="font-montserrat pl-10 text-white text-lg leading-8 mt-6 sm:w-[500px]">
+            <p className="font-montserrat pl-10 text-white text-base sm:text-lg leading-8 mt-6 sm:min-w-min">
                 Whether you’re buying or selling real estate, with Adelbin, you can be confident you’ll secure the best deals always.
             </p>
 
-            <p className="font-montserrat pl-10 mt-1 text-white text-lg leading-8 sm:w-[500px]">
+            <p className="font-montserrat pl-10 mt-1 text-white text-base sm:text-lg leading-8 sm:min-w-min">
                 Your confidence is guaranteed through actions, find a partner in Adelbin and help your bottom line. 
             </p>     
         </div>

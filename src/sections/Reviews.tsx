@@ -15,11 +15,11 @@ const Reviews = () => {
           Hear stories from clients about their exceptional experience with my services.
         </p>
       </div>
-      <div className="flex-1 flex just items-center px-6">
+      <div className="flex w-min just items-center px-6">
       <Carousel interval={6000}>
         {
-          reviews.map((review)=>(
-                  <CarouselCard feedback={review.feedback} customerName={review.customerName} />
+          reviews.map((review,index)=>(
+                  <CarouselCard key={index} feedback={review.feedback} customerName={review.customerName} />
           ))
         }
       </Carousel>

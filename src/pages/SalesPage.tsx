@@ -8,16 +8,13 @@ const SalesPage = () => {
   return (
     <main className="relative">
       <Nav/>
-      <section className="padding-x pb-8">
+      <section className="xl:padding-l wide:padding-r padding-b">
         <RealEstateHero/>
       </section>
-      <section className="padding-x pb-8">
+      <section className="xl:padding-l wide:padding-r padding-b">
         <HomeWorthSection/>
       </section>
-      <section className="padding-y padding-x padding-t pb-8">
-        2 CARDS FOR COMMERCIAL AND PRIVATE
-      </section>
-      <section className="padding-x pb-8">
+      <section className="xl:padding-l wide:padding-r padding-b">
         <FindHomeSection/>
       </section>
       <section className="padding-y bg-black padding-x padding-t pb-8">

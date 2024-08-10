@@ -23,7 +23,7 @@ import { mortagecards } from '../constants'
 
 const MortgageInfo = () => {
   return (
-    <div className="flex flex-col gap-8 px-16">
+    <div className="flex flex-col gap-8 px-16 my-10">
       <div className="flex flex-wrap justify-center gap-8">
         {mortagecards.slice(0, 3).map((info) => (
           <MortgageInfoCard
@@ -33,7 +33,7 @@ const MortgageInfo = () => {
           />
         ))}
       </div>
-      <div className="flex justify-center gap-8">
+      <div className="flex flex-wrap justify-center gap-8">
         {mortagecards.slice(3).map((info) => (
           <MortgageInfoCard
             key={info.heading} // Add a key prop

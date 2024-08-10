@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 const Footer = () => {
   return (
     <footer className='max-container'>
-      <div className='flex justify-between items-start gap-20 flex-wrap max-lg:flex-col'>
+      <div className='flex lg:flex-row justify-between items-start gap-20 flex-wrap flex-col'>
         <div className='flex flex-col items-start'>
           <a href="./">
             <div className="flex flex-col items-center">
@@ -47,15 +47,15 @@ const Footer = () => {
         </div>
 
         <div className="flex flex-col">
-          <div className='flex flex-1 justify-end lg:gap-10 gap-20 flex-wrap'>
-              <div className="hover:border-orange-300 border-8 border-white p-10  rounded-lg flex flex-col mx-10">
-                <h4 className='hover:text-orange-300 font-montserrat text-4xl leading-normal font-medium text-white'>
+          <div className='flex flex-1 justify-start md:justify-end lg:gap-10 gap-20'>
+              <div className="border-orange-300 lg:hover:border-orange-300 border-8 lg:border-white p-5 lg:p-10 rounded-lg flex flex-col mx-0 ">
+                <h4 className='whitespace-nowrap text-orange-300 lg:hover:text-orange-300 font-montserrat text-xl lg:text-4xl leading-normal font-medium lg:text-white'>
                     Reach Out For Free Consultation
                 </h4>
                 <ul>
                   {footerLinks.map((link) => (
                     <li
-                      className='hover:text-orange-300 mt-3 font-montserrat text-4xl leading-normal text-white'
+                      className='text-orange-300 lg:hover:text-orange-300 mt-3 font-montserrat text-xl lg:text-4xl leading-normal lg:text-white'
                       key={link.name}
                     >
                       <a href={link.link}>{link.name}</a>
@@ -64,14 +64,13 @@ const Footer = () => {
                 </ul>
               </div>
           </div>
-          <p className="mx-10 mt-10 w-[800px] text-slate-gray flex-1 flex">
-              {disclaimer}
-          </p>
-
         </div>
-
-
       </div>
+      
+      <p className="mx-0 text-sm mt-10 w-max-sm text-slate-gray flex-1 flex">
+              {disclaimer}
+      </p>
+
 
       <div className='flex justify-between text-white-400 mt-24 max-sm:flex-col max-sm:items-center'>
         <div className='flex flex-1 justify-start items-center gap-2 font-montserrat cursor-pointer'>

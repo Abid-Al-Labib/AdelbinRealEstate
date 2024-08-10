@@ -13,13 +13,14 @@ const Carousel: React.FC<CarouselProps> = ({ children, interval = 5000 }) => {
   useEffect(() => {
     const timer = setInterval(() => {
       setIsTransitioning(true);
-      setActiveIndex((prevIndex) => prevIndex + 1);
+      setActiveIndex((prevIndex) => (prevIndex + 1) % totalSlides);
     }, interval);
 
     return () => clearInterval(timer);
-  }, [interval]);
+  }, [interval, totalSlides]);
 
   const handleTransitionEnd = () => {
+    // This is to handle the infinite loop effect, making it smooth.
     if (activeIndex === totalSlides) {
       setIsTransitioning(false);
       setActiveIndex(0);

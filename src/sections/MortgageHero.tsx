@@ -7,19 +7,19 @@ const MortgageHero = () => {
         max-container w-full bg-blue-950 bg-cover bg-center"
     >
         <div className="relative xl:w-2/5 flex flex-col justify-center items-start w-full max-xl:padding-x pt-15">
-            <h1 className="text-orange-300 pl-10 mt-10 font-palanquin text-8xl max-sm:text-[70px] max-sm:leading-[78px] font-bold">
+            <h1 className="text-orange-300 pl-10 mt-10 font-palanquin text-4xl sm:text-8xl max-sm:text-[70px] max-sm:leading-[78px] font-bold">
                 <span>Mortgage Solutions</span>
                 <br />          
             </h1>
-                <p className="font-montserrat pl-10 text-white text-2xl font-bold leading-8 mt-6 sm:max-w-sm">
+                <p className="font-montserrat pl-10 text-white text-xl sm:text-2xl font-bold leading-8 mt-6 sm:max-w-sm">
                     Solutions For Every Dream
                 </p>
 
-                <p className="font-montserrat pl-10 text-white text-lg leading-8 mt-6 sm:w-[500px]">
+                <p className="font-montserrat pl-10 text-white text-base sm:text-lg leading-8 mt-6 sm:min-w-min">
                     Secure funding for your real estate ventures quickly and efficiently with personalized mortgage solutions.
                 </p>
 
-                <p className="font-montserrat pl-10 text-white text-lg leading-8 sm:w-[500px]">
+                <p className="font-montserrat pl-10 text-white text-base sm:text-lg leading-8 sm:min-w-min">
                     Start with a no-obligation discussion to explore the best products for your unique situation and make your dream purchase a reality!
                 </p>     
         </div>
