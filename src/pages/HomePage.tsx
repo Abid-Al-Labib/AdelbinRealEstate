@@ -3,7 +3,13 @@ import Services from "../sections/Services"
 import Footer from "../sections/Footer"
 import Reviews from "../sections/Reviews"
 import HomeAbout from "../sections/HomeAbout"
+import { useEffect } from "react"
 function HomePage() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
+  
   return (
     <main className="relative">
       <Nav/>

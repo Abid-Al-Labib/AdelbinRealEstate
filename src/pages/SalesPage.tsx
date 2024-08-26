@@ -1,3 +1,4 @@
+import { useEffect } from "react"
 import Nav from "../components/Nav"
 import FindHomeSection from "../sections/FindHomeSection"
 import Footer from "../sections/Footer"
@@ -5,6 +6,11 @@ import HomeWorthSection from "../sections/HomeWorthSection"
 import RealEstateHero from "../sections/RealEstateHero"
 
 const SalesPage = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
+  
   return (
     <main className="relative">
       <Nav/>

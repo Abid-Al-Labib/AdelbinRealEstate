@@ -1,9 +1,15 @@
+import { useEffect } from "react"
 import Nav from "../components/Nav"
 import ConstructionHero from "../sections/ConstructionHero"
 import ConstructionInfo from "../sections/ConstructionInfo"
 import Footer from "../sections/Footer"
 
 const ConstructionPage = () => {
+    useEffect(() => {
+      window.scrollTo(0, 0);
+    }, []);
+  
+
   return (
     <main className="relative">
       <Nav/>

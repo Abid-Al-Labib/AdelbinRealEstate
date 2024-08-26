@@ -49,7 +49,7 @@ const HomeAbout = () => {
       
       <div className="relative flex-1 flex flex-row justify-center items-center xl:min-h-screen max-xl:py-40 bg-primary bg-hero bg-cover bg-center">
         <ImageSlider images={heroImages} />
-        <img className="absolute -bottom-[3%] -right-[5%] border-2 border-black rounded-full"src={adelimg} width={200} height={200} alt="Adelbin" />
+        <img className="absolute -bottom-[5%] right-[1%] sm:-bottom-[3%] sm:-right-[5%] border-2 border-black rounded-full"src={adelimg} width={200} height={200} alt="Adelbin" />
         
       </div>
       

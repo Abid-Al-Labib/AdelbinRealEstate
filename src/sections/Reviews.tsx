@@ -4,7 +4,7 @@ import CarouselCard from "../components/CarouselCard.tsx"
 import { reviews } from "../constants/index.tsx"
 const Reviews = () => {
   return (
-    <section id="about-us"
+    <section
     className="flex justify-between items-center max-lg:flex-col gap-10 w-full max-container ">
       <div className="flex flex-1 flex-col max-lg:text-center max-xl:padding-x">
         <h2 className="font-palanquin text-4xl capitalize font-bold lg:max-w-lg">
@@ -15,7 +15,7 @@ const Reviews = () => {
           Hear stories from clients about their exceptional experience with my services.
         </p>
       </div>
-      <div className="flex w-min just items-center px-6">
+      <div className="flex flex-1 w-full items-center px-6">
       <Carousel interval={6000}>
         {
           reviews.map((review,index)=>(

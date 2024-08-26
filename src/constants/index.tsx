@@ -58,7 +58,7 @@ export const navLinks = [
 
 export const statistics = [
     { value: '11+', label: 'Years' },
-    { value: '300+', label: 'Clients' },
+    { value: '$550+', label: 'Volume' },
     { value: '$58k', label: 'Savings on avg.' },
 ];
 

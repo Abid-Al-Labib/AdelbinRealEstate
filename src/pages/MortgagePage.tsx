@@ -1,3 +1,4 @@
+import { useEffect } from "react"
 import Nav from "../components/Nav"
 import Footer from "../sections/Footer"
 import MortgageCalculator from "../sections/MortgageCalculator"
@@ -6,6 +7,11 @@ import MortgageInfo from "../sections/MortgageInfo"
 import MortgageSteps from "../sections/MortgageSteps"
 
 const MortgagePage = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
+  
   return (
     <main className="relative">
       <Nav/>

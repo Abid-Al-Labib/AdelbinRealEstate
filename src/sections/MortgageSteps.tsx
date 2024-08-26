@@ -17,9 +17,9 @@ const MortgageSteps = () => {
             
         </div>
         
-        <div className="flex flex-1 sm:flex-row items-center my-6 flex-col">
+        <div className="flex flex-1 sm:flex-row sm:justify-center items-center my-6 flex-col">
             {mortageSteps.map((step)=>(
-                <div className="flex flex-col my-6 items-center w-64 mx-4 hover:shadow-inner p-2 justify-center">
+                <div className="flex flex-col my-6 items-center w-64 mx-4 p-2 justify-center">
                     <img src={step.iconURL} width={70} height={70} alt="step icon" />
                     <h2 className="mt-2">{step.step}</h2>
                     <h2 className="mt-2">{step.Heading}</h2>

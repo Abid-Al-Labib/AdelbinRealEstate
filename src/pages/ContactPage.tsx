@@ -2,8 +2,14 @@ import ContactForm from "../components/ContactForm"
 import ContactInfo from "../sections/ContactInfo"
 import Nav from "../components/Nav"
 import Footer from "../sections/Footer"
+import { useEffect } from "react"
 
 const ContactPage = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
+
   return (
     <main className="relative">
       <Nav/>
