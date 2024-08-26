@@ -147,25 +147,25 @@ export const constructioninfo = [
         iconurl: houseblack,
         alt:"house-home renovation",
         heading: "Home Renovation",
-        subtext: "Please fill out this part with relevant information. This is a dummy text only for the purpose of building the card component"
+        subtext: "Our residential and commercial construction services are designed to meet the diverse needs of homeowners and businesses alike. Whether you’re building a new home, expanding your office space, or renovating an existing property, our team of experienced professionals delivers high-quality craftsmanship and attention to detail. We offer comprehensive solutions from initial planning and design to final construction, ensuring your project is completed on time and within budget. Trust us to bring your vision to life with precision and excellence."
     },
     {
         iconurl: gears,
         alt: "gears-remodeling services",
         heading: "Remodeling Services",
-        subtext: "Please fill out this part with relevant information. This is a dummy text only for the purpose of building the card component"
+        subtext: "Whether you’re looking to update your kitchen, remodel your bathroom, or add a new room, our home renovation services are designed to bring your vision to life. With a team of skilled professionals, we offer comprehensive solutions that cater to your unique needs and preferences. From initial design to final construction, we ensure high-quality workmanship and attention to detail, making your home renovation experience seamless and stress-free."
     },
     {
         iconurl: paintroller,
         alt: "paint-roller-repainting services",
         heading: "Repainting Services",
-        subtext: "Please fill out this part with relevant information. This is a dummy text only for the purpose of building the card component"
+        subtext: "Our home and commercial painting services are designed to give your property a fresh, vibrant look. Whether you’re looking to update the interior or exterior of your home or need a professional touch for your commercial space, our skilled painters deliver high-quality results. We use premium materials and techniques to ensure a flawless finish that lasts. From color consultation to meticulous preparation and clean-up, we handle every detail to make your painting project seamless and stress-free."
     },
     {
         iconurl: constructionsaw,
         alt: "construction man with saw - New Construction",
         heading: "New Construction",
-        subtext: "Please fill out this part with relevant information. This is a dummy text only for the purpose of building the card component"
+        subtext: "Our new home construction services are designed to turn your vision into reality. From initial planning and design to the final touches, we provide comprehensive solutions to ensure your new home meets your exact specifications. Our team of experienced builders and architects work closely with you to create a custom home that reflects your style and needs. With a commitment to quality craftsmanship and attention to detail, we make the home-building process seamless and enjoyable."
     }
 ]
 

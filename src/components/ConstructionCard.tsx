@@ -10,7 +10,7 @@ interface ConstructionCardProps{
 
 const ConstructionCard: FC<ConstructionCardProps> = ({ iconURL, alttag, heading, subtext }) => {
   return (
-    <div className="flex flex-col flex-1 border-2 rounded-[20px] shadow-3xl px-10 py-10 hover:border-blue-950 hover:shadow-gray-600">
+    <div className="flex flex-col flex-1 border-2 rounded-[20px] shadow-3xl px-10 py-10">
       <div className="w-10 h-10 flex justify-center items-center bg-yellow-500 rounded-lg">
         <img src={iconURL} alt={alttag} width={28} height={28} />
       </div>

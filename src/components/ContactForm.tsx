@@ -1,12 +1,6 @@
 
 'use client'
-
-import { useState } from 'react'
-import { Field, Label, Switch } from '@headlessui/react'
-
 export default function Example() {
-  const [agreed, setAgreed] = useState(false)
-
   return (
     <div className="isolate bg-white px-6 py-16 sm:py-20 lg:px-8">
       <div className="mx-auto max-w-2xl text-center">
