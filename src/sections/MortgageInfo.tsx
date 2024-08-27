@@ -1,24 +1,9 @@
-// import MortgageInfoCard from '../components/MortgageInfoCard'
-// import { mortagecards } from '../constants'
-
-
-// const MortgageInfo = () => {
-//   return (
-//     <div className="flex sm:flex-row gap-8 flex-col place-items-center px-16">
-//     {mortagecards.map((info)=>(
-        
-//         <MortgageInfoCard
-//             heading={info.heading}
-//             subtext = {info.subtext}
-//         />
-//     ))}
-//     </div>
-//   )
-// }
-
-// export default MortgageInfo
-
 import MortgageInfoCard from '../components/MortgageInfoCard'
+import MortgageInfoCardCreditRepair from '../components/MortgageInfoCardCreditRepair'
+import MortgageInfoCardCustomizedLoan from '../components/MortgageInfoCardCustomizedLoan'
+import MortgageInfoCardFirstTimeHome from '../components/MortgageInfoCardFirstTimeHome'
+import MortgageInfoCardNoIncome from '../components/MortgageInfoCardNoIncome'
+import MortgageInfoCardRefinancing from '../components/MortgageInfoCardRefinancing'
 import { mortagecards } from '../constants'
 
 const MortgageInfo = () => {
@@ -42,6 +27,14 @@ const MortgageInfo = () => {
           />
         ))}
       </div>
+      <div className="flex flex-wrap justify-center gap-8">
+        <MortgageInfoCardRefinancing/>
+        <MortgageInfoCardCustomizedLoan/>
+        <MortgageInfoCardCreditRepair/>  
+        <MortgageInfoCardFirstTimeHome/>
+        <MortgageInfoCardNoIncome/>
+      </div>
+
     </div>
   )
 }
