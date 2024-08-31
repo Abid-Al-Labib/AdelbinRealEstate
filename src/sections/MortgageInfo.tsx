@@ -1,10 +1,8 @@
-import MortgageInfoCard from '../components/MortgageInfoCard'
 import MortgageInfoCardCreditRepair from '../components/MortgageInfoCardCreditRepair'
 import MortgageInfoCardCustomizedLoan from '../components/MortgageInfoCardCustomizedLoan'
 import MortgageInfoCardFirstTimeHome from '../components/MortgageInfoCardFirstTimeHome'
 import MortgageInfoCardNoIncome from '../components/MortgageInfoCardNoIncome'
 import MortgageInfoCardRefinancing from '../components/MortgageInfoCardRefinancing'
-import { mortagecards } from '../constants'
 
 const MortgageInfo = () => {
   return (
