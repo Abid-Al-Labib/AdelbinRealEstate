@@ -58,7 +58,7 @@ export const navLinks = [
 
 export const statistics = [
     { value: '11+', label: 'Years' },
-    { value: '$550+', label: 'Volume' },
+    { value: '$550MM+', label: 'Volume' },
     { value: '$58k', label: 'Savings on avg.' },
 ];
 
@@ -101,27 +101,27 @@ export const socialMedia = [
 export const reviews = [
     { 
         feedback: "Adel is the most responsive and sincere real estate agent I have met. He is always patient with my queries.",
-        customerName: "Abid Al Labib"
+        customerName: "David Smith"
     },
     {
-        feedback:"Amazing experience! Adel helped me find the perfect home at a great price. The process was smooth and stress-free. Best part was when he said he was my biggest fan",
-        customerName: "Lionel Messi"
+        feedback:"Amazing experience! Adel helped me find the perfect home at a great price. The process was smooth and stress-free.",
+        customerName: "Matthew Brown"
     },
     {
         feedback: "Highly recommend! Adel's expertise and dedication made selling my property easy and profitable. Exceptional service all around.",
-        customerName: "Cristiano Ronaldo"
+        customerName: "Joshua Anderson"
     },
     {
         feedback: "Fantastic service! I found my dream home quickly and at an incredible deal. Adel's team is knowledgeable and supportive.",
-        customerName: "Kylian Mbappe"
+        customerName: "Ashley Miller"
     },
     {
         feedback: "The best real estate experience I've ever had. Adel handled everything efficiently, ensuring I got the best value for my sale.",
-        customerName: "Mohammed and family"
+        customerName: "Daniel Harris"
     },
     {
         feedback: "Top-notch construction services! Adel completed my project on time and within budget. The quality and attention to detail were impressive.",
-        customerName: "Mr. Nobody"
+        customerName: "Omar Khaled"
     }
 ]
 
