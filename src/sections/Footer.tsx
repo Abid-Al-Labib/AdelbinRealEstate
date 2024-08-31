@@ -84,7 +84,7 @@ const Footer = () => {
           <p>Copyright. All rights reserved.</p>
         </div>
         <Link to={"/Terms&Conditions"}>
-        <p className='font-montserrat cursor-pointer hover:underline'>Terms & Conditions</p>
+        <p className='font-montserrat cursor-pointer hover:underline'>Terms of Use</p>
         </Link>
       </div>
     </footer>
