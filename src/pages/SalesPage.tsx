@@ -18,10 +18,10 @@ const SalesPage = () => {
         <RealEstateHero/>
       </section>
       <section className="xl:padding-l wide:padding-r padding-b">
-        <HomeWorthSection/>
+        <FindHomeSection/>
       </section>
       <section className="xl:padding-l wide:padding-r padding-b">
-        <FindHomeSection/>
+        <HomeWorthSection/>
       </section>
       <section className="padding-y bg-black padding-x padding-t pb-8">
         <Footer/>

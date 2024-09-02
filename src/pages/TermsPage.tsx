@@ -1,4 +1,10 @@
+import { useEffect } from "react";
+
 const TermsPage = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+  
   return (
     <div className="p-6 bg-white rounded-md shadow-lg max-w-3xl mx-auto">
       

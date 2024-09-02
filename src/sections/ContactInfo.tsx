@@ -24,11 +24,11 @@ const ContactInfo = () => {
                 <div
                     className='flex justify-center items-center w-12 h-12 bg-crimson rounded-full'
                 >
-                    <a className="hover:marker" href="mailto:info@adelbin.com">
+                    <a className="hover:marker" href="mailto:sales@adelbin.com">
                         <img src={mailwhite} alt="mail logo" width={28} height={28}/>
                     </a>
                 </div>
-                <a className="text-lg px-4 flex items-center hover:marker font-bold" href="mailto:info@adelbin.com">info@adelbin.com</a>
+                <a className="text-lg px-4 flex items-center hover:marker font-bold" href="mailto:sales@adelbin.com">sales@adelbin.com</a>
             </div>
         </div>
         <div>

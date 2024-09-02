@@ -87,7 +87,7 @@ export const services = [
 
 export const footerLinks = [
 
-            { name: "info@adelbin.com", link: "mailto:info@adelbin.com" },
+            { name: "sales@adelbin.com", link: "mailto:sales@adelbin.com" },
             { name: "917-348-8919", link: "tel:9173488919" },
 
 ];
