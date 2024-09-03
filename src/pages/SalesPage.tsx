@@ -14,14 +14,14 @@ const SalesPage = () => {
   return (
     <main className="relative">
       <Nav/>
-      <section className="xl:padding-l wide:padding-r padding-b">
+      <section className="xl:padding-l wide:padding-r">
         <RealEstateHero/>
       </section>
       <section className="xl:padding-l wide:padding-r padding-b">
-        <FindHomeSection/>
+        <HomeWorthSection/>
       </section>
       <section className="xl:padding-l wide:padding-r padding-b">
-        <HomeWorthSection/>
+        <FindHomeSection/>
       </section>
       <section className="padding-y bg-black padding-x padding-t pb-8">
         <Footer/>
