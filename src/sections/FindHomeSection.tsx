@@ -7,23 +7,10 @@ const FindHomeSection = () => {
         </h1>
       </div>
 
-      <div className="w-full flex justify-center items-center">
-        <iframe
-          src="//maps.lirealtor.com/?id=0e32c039-5f27-43cd-96f5-a7375baed5e8"
-          scrolling="no"
-          className="w-full h-[2000px] max-w-[990px]"
-          frameBorder="0"
-        ></iframe>
+      <div className="w-full h-[1000px] flex justify-center mt-4 items-center">
+        <iframe src="https://matrix-new.onekeymlsny.com/Matrix/public/IDX.aspx?idx=b8be2ac4" width="100%" height="100%"></iframe>
       </div>
-
-      <div className="w-full flex justify-center mt-4 items-center">
-        <iframe
-          src="//maps.lirealtor.com/Properties.aspx?id=0e32c039-5f27-43cd-96f5-a7375baed5e8&mode=solds"
-          scrolling="yes"
-          className="w-full h-[1500px] max-w-[990px]"
-          frameBorder="0"
-        ></iframe>
-      </div>
+      
     </section>
   );
 };
