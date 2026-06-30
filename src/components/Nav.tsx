@@ -23,9 +23,15 @@ const Nav = () => {
         <ul className="flex-1 flex justify-center items-center gap-16 max-lg:hidden">
           {navLinks.map((item) => (
             <li key={item.label}>
-              <Link to={item.to} className="font-montserrat text-2xl font-bold text-black hover:underline hover:text-slate-gray">
-                {item.label}
-              </Link>
+              {item.external ? (
+                <a href={item.to} target="_blank" rel="noopener noreferrer" className="font-montserrat text-2xl font-bold text-black hover:underline hover:text-slate-gray">
+                  {item.label}
+                </a>
+              ) : (
+                <Link to={item.to} className="font-montserrat text-2xl font-bold text-black hover:underline hover:text-slate-gray">
+                  {item.label}
+                </Link>
+              )}
             </li>
           ))}
         </ul>
@@ -57,18 +63,33 @@ const Nav = () => {
             />
           </div>
 
-          {navLinks.map((item) => (
-            <Link
-              key={item.label}
-              to={item.to}
-              className="w-full flex justify-center rounded-full border-2 bg-gray-300 border-white cursor-pointer"
-              onClick={() => setMenuOpen(false)}
-            >
-              <span className="font-montserrat leading-normal font-bold text-lg text-black hover:underline m-4">
-                {item.label}
-              </span>
-            </Link>
-          ))}
+          {navLinks.map((item) =>
+            item.external ? (
+              <a
+                key={item.label}
+                href={item.to}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-full flex justify-center rounded-full border-2 bg-gray-300 border-white cursor-pointer"
+                onClick={() => setMenuOpen(false)}
+              >
+                <span className="font-montserrat leading-normal font-bold text-lg text-black hover:underline m-4">
+                  {item.label}
+                </span>
+              </a>
+            ) : (
+              <Link
+                key={item.label}
+                to={item.to}
+                className="w-full flex justify-center rounded-full border-2 bg-gray-300 border-white cursor-pointer"
+                onClick={() => setMenuOpen(false)}
+              >
+                <span className="font-montserrat leading-normal font-bold text-lg text-black hover:underline m-4">
+                  {item.label}
+                </span>
+              </Link>
+            )
+          )}
         </div>
       )}
     </header>

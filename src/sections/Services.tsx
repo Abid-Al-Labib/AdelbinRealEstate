@@ -18,16 +18,25 @@ const Services = () => {
         </div>
 
         <div className="max-container pt-2 grid grid-rows max-xl:grid-cols-1 gap-2 max-lg:flex-col max-xl:padding-x">
-            {services.map((service)=>(
-                <Link to={service.url}>
-                    <ServiceCard 
-                    key={service.label}
-                    iconURL={service.iconURL}
-                    label={service.label}
-                    subtext={service.subtext}
-                />
-                </Link>
-            ))}
+            {services.map((service) =>
+                service.external ? (
+                    <a key={service.label} href={service.url} target="_blank" rel="noopener noreferrer">
+                        <ServiceCard
+                            iconURL={service.iconURL}
+                            label={service.label}
+                            subtext={service.subtext}
+                        />
+                    </a>
+                ) : (
+                    <Link key={service.label} to={service.url}>
+                        <ServiceCard
+                            iconURL={service.iconURL}
+                            label={service.label}
+                            subtext={service.subtext}
+                        />
+                    </Link>
+                )
+            )}
         </div>
 
     </section>

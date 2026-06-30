@@ -39,15 +39,17 @@ export const navLinks = [
         label: "Real Estate",
         to: "/RealEstates"
     },
-    { 
+    {
         href: "#construction",
         label: "Construction",
-        to: "/Construction"
+        to: "https://www.adelbinconstruction.com",
+        external: true
      },
-    { 
+    {
         href: "#Mortgage",
         label: "Mortgage",
-        to: "/Mortgage"
+        to: "https://www.contourmortgage.com/lob/adelbin-imani",
+        external: true
     },
     { 
         href: "#contact-me", 
@@ -72,15 +74,17 @@ export const services = [
     },
     {
         iconURL: tools,
-        url: "/Construction",
+        url: "https://www.adelbinconstruction.com",
         label: "Construction",
-        subtext: "Licensed General Contractor Serving New York City & Nassau County. Delivering exceptional quality and innovative practices to ensure your project stands the test of time, all at the best price." 
+        external: true,
+        subtext: "Licensed General Contractor Serving New York City & Nassau County. Delivering exceptional quality and innovative practices to ensure your project stands the test of time, all at the best price."
 
     },
     {
         iconURL: banknotes,
-        url: "/Mortgage",
+        url: "https://www.contourmortgage.com/lob/adelbin-imani",
         label: "Mortgage",
+        external: true,
         subtext: " Secure funding for your real estate ventures quickly and efficiently with personalized mortgage solutions. Start with a no-obligation discussion to explore the best products for your unique situation and make your dream purchase a reality!"
     }
 ]
